@@ -3,3 +3,15 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+
+.bhx-logo{
+    background-image: url(icon/bhx-logo.png);
+}
+
+.bhx-search{
+    background-image: url(icon/bhx-search.png);
+}
+
+.bhx-toggle{
+    background-image: url(icon/bhx-toggle.png);
+}

@@ -8,39 +8,179 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 header{
     position: fixed;
     top: 0px;
     background-color: #008848;
-    width: 100%;
+    width: 100%;    /*Theo body*/
     min-height: 50px;
     padding: 0 5.5%;
 }
 
 .tophead{
-    margin-left: 20%;
-    width: 80%;
+    margin-left: 20%;       /*Theo header*/
+    width: 80%;     /*Theo header*/
     min-height: 50px;
+}
+
+.logo{
+    width: 20%;     /*Theo tophead*/
+    min-height: 50px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.logo>i{
+    width: 170.75px;
+    height: 35px;
+}
+
+.mainsearch{
+    width: 40%;     /*Theo tophead*/
+    min-height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainsearch>div{
+    width: 95%;     /*Theo .mainsearch*/
+    height: 35px;
+    position: relative;
+}
+
+.mainsearch input{
+    width: 100%;    /*Theo .mainsearch>div*/
+    height: 100%;   /*Theo .mainsearch>div*/
+    text-indent: 10px;
+    border-radius: 4px;
+    border: 0;
+    outline: none;
+}
+
+.mainsearch button{
+    background-color: #ffffff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;   /*Theo .mainsearch>div*/
+    width: 10%;     /*Theo .mainsearch>div*/
+    border-radius: 4px;
+    border: 0;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainsearch button>i{
+    width: 18px;
+    height: 18px;
+}
+
+.hiscart{
+    width: 40%;     /*Theo tophead*/
+    min-height: 50px;
+    align-items: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+.hiscart>div{
+    height: 36px;
+    width: 62.5%;    /*Theo hiscart*/
+}
+
+.location-container{
+    width: 40%;     /*Theo hiscart>div*/
+    height: 100%;   /*Theo hiscart>div*/
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.location-container>div{
+    width: 80%;     /*Theo location-container*/
+    height: 100%;    /*Theo location-container*/
+    background-color: #057541;
+    padding: 4px;
+}
+
+.location-container>div>div{
+    width: 100%;    /*Theo .location-container>div*/
+    height: 50%;   /*Theo .location-container>div*/
+}
+
+.location-container .shipto{
+    width: 80%;     /*Theo .location-container>div>div*/
+    height: 100%;   /*Theo .location-container>div>div*/
+    text-align: center;
+    font-size: 11px;
+}
+
+.location-container>div>div>i{
+    width: 15px;     /*Theo .location-container>div>div*/
+    height: 15px;   /*Theo .location-container>div>div*/
+}
+
+.location-container .current-locate{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.histories{
+    width: 60%;   /*Theo hiscart>div*/
+    height: 100%;   /*Theo hiscart>div*/
+    color: #fff;
+    text-align: center;
+    line-height: 14px;
+    padding: 4px;
+}
+
+.temcart{
+    background-color:rgba(19,18,24,0.16);
+    width: 37.5%;   /*Theo hiscart*/
+    height: 100%;   /*Theo hiscart*/
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+.temcart>div>i{
+
 }
 
 .colmenu{
     position: fixed;
     background-color: #fff;
     min-height: 100vh;
-    width: 17.8%;
+    width: 17.8%;   /*Theo body*/
     top: 12px;
-    left: 5.5%;
+    left: 5.5%;     /*Theo body*/
+    border-radius: 4px 4px 0 0;
+}
+
+/* Tới đây đói bụng quá không làm nữa :D */
+.colmenu>span{
+    height: 38px;
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 section{
     background-color: #e9edf0;
+    width: 100%;    /*Theo body*/
     min-height: 1000px;
     margin-top: 50px;
-    padding: 0 5.5%;
+    padding: 0 5.5%;    /*Theo body*/
 }
 
 .colcontent{
-    margin-left: 20%;
+    margin-left: 20%;   /*Theo section*/
+    width: 80%;     /*Theo section*/
     min-height: 1000px;
     padding-top: 10px;
     padding-left: 10px;
@@ -48,17 +188,20 @@ section{
 
 footer{
     background-color: #e9edf0;
+    width: 100%;    /*Theo body*/
     min-height: 300px;
-    padding: 0 5.5%;
+    padding: 0 5.5%;    /*Theo body*/
 }
 
 footer>div{
     min-height: 300px;
-    margin-left: 20%;
+    margin-left: 20%;   /*Theo footer*/
+    width: 80%;     /*Theo footer*/
     padding-left: 10px;
     padding-top: 10px;
 }
 
+/* Chưa cần làm bây giờ */
 .stickyfeedback{
     position: fixed;
 }
