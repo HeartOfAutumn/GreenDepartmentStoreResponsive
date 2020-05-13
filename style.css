@@ -60,11 +60,11 @@ footer>div{
 }
 
 .stickyfeedback{
-
+    position: fixed;
 }
 
 #back-top{
-
+    position: fixed;
 }
 
 
