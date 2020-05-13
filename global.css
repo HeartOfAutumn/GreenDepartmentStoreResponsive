@@ -1,0 +1,11 @@
+.row{
+    display: flex;
+}
+
+.col{
+    width: 100%;
+}
+
+.box{
+    min-height: 100px;
+}
