@@ -155,18 +155,47 @@ header{
 .colmenu{
     position: fixed;
     background-color: #fff;
-    min-height: 100vh;
+    height: 90vh;
     width: 17.8%;   /*Theo body*/
     top: 12px;
     left: 5.5%;     /*Theo body*/
     border-radius: 4px 4px 0 0;
 }
 
-/* Tới đây đói bụng quá không làm nữa :D */
 .colmenu>span{
-    height: 38px;
-    width: 100%;
-    padding: 10px 10px 10px 35px;
+    height: 38px;  
+    width: 100%;    /*Theo colmenu*/
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.colmenu i{
+    height: 21px;
+    width: 21px;
+}
+
+.colmenu p{
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.colmenu-ul{
+    width: 100%;    /*Theo colmenu*/
+    height: 100%;   /*Theo colmenu*/
+    padding-inline-start: 0px;
+    flex-direction: column;
+}
+
+.colmenu-ul>li{
+    display: inline-block;
+    width: 100%;    /*Theo colmenu-ul*/
+    height: 7%;    /*Theo colmunu-ul*/
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
     border-bottom: 1px solid #e5e5e5;
 }
 
@@ -181,9 +210,26 @@ section{
 .colcontent{
     margin-left: 20%;   /*Theo section*/
     width: 80%;     /*Theo section*/
-    min-height: 1000px;
+    height: 1000px;
     padding-top: 10px;
     padding-left: 10px;
+}
+
+.slide-home{
+    width: 100%;    /*Theo colcontent*/
+    height: 20%;    /*Theo colcontent*/
+}
+
+.groupcate{
+    width: 100%;    /*Theo colcontent*/
+}
+
+.groupfeature{
+    width: 100%;    /*Theo colcontent*/
+}
+
+.homenews{
+    width: 100%;    /*Theo colcontent*/
 }
 
 footer{
