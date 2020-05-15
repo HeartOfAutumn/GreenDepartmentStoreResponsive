@@ -248,8 +248,14 @@ section{
     position: relative;
 }
 
-.owl-stage-outer{
+.slide-home button{
+    outline: none;
+    cursor: pointer;
+}
 
+.owl-stage-outer{
+    width: 100%;    /*Theo slide-home*/
+    height: 100%;   /*Theo slide-home*/
 }
 
 .owl-nav{
@@ -259,7 +265,7 @@ section{
 .owl-prev,
 .owl-next{
     position: absolute;
-    top: 50%;
+    top: 50%;   /*Canh theo slide-home*/
     transform: translateY(-50%);
     display: inline-block;
     padding: 0;
@@ -297,6 +303,10 @@ section{
     border: 0;
     padding: 0;
     background-color: transparent;
+}
+
+.owl-dots>button:hover span{
+    background-color: #03763e;
 }
 
 .owl-dots span{
