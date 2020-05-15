@@ -47,6 +47,11 @@
     border-color: transparent transparent transparent #fff;
 }
 
+.owl-prev:hover,
+.owl-next:hover{
+    border-width: 11px;
+}
+
 .owl-dots{
     width: 100%;
     position: absolute;

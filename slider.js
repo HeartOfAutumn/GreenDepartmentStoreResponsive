@@ -1,5 +1,5 @@
 
-//Viết cho Slider
+//Tạo hiệu ứng active cho các id="owl-dots"
 var header = document.getElementById("owl-dots");
 var btns = header.getElementsByClassName("owl-dot");
 for (var i = 0; i < btns.length; i++) {
@@ -9,4 +9,3 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
     });
 }
-
