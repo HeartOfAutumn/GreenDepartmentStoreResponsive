@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tophead.css">
+    <link rel="stylesheet" href="colmenu.css">
+    <link rel="stylesheet" href="slider.css">
     <link rel="stylesheet" href="icon.css">
     <title>Bách hóa xanh</title>
 </head>
@@ -70,17 +73,17 @@
     <section>
         <aside class="colcontent">
             <div class="slide-home">
-                <div class="owl-stage-outer">
+                <div class="owl-stage-outer" id="owl-stage-outer">
                     <img src="images/slider-1.jpg">
                 </div>
                 <div class="owl-nav">
-                    <button type="button" class="owl-prev"></button>
+                    <button type="button" class="owl-prev"></bSutton>
                     <button type="button" class="owl-next"></button>
                 </div>
-                <div class="owl-dots">
-                    <button type="button"class="owl-dot"><span></span></button>
-                    <button type="button"class="owl-dot"><span></span></button>
-                    <button type="button"class="owl-dot"><span></span></button>
+                <div class="owl-dots" id="owl-dots">
+                    <button type="button" class="owl-dot active"><span></span></button>
+                    <button type="button" class="owl-dot"><span></span></button>
+                    <button type="button" class="owl-dot"><span></span></button>
                 </div>
             </div>
             <div class="groupcate"></div>
@@ -94,5 +97,8 @@
     <!--  -->
     <div class="stickyfeedback"></div>
     <div id="back-top"></div>
+
+
+    <script src="script.js" type="text/javascript"></script>
 </body>
 </html>

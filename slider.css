@@ -1,0 +1,81 @@
+.slide-home{
+    width: 100%;    /*Theo colcontent*/
+    height: 200px;
+    position: relative;
+}
+
+.slide-home button{
+    outline: none;
+    cursor: pointer;
+}
+
+.owl-stage-outer{
+    width: 100%;    /*Theo slide-home*/
+    height: 100%;   /*Theo slide-home*/
+}
+
+.owl-nav{
+    
+}
+
+.owl-prev,
+.owl-next{
+    position: absolute;
+    top: 50%;   /*Canh theo slide-home*/
+    transform: translateY(-50%);
+    display: inline-block;
+    padding: 0;
+    background-color: transparent;
+}
+
+.owl-prev{
+    margin-left: 10px;     /*Canh theo slide-home*/
+    content: "";
+    width: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+}
+
+.owl-next{
+    right: 0;       /*Canh theo slide-home*/
+    margin-right: 10px;     /*Canh theo slide-home*/
+    content: "";
+    width: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+}
+
+.owl-dots{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+.owl-dots>button{
+    display: inline-block;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.owl-dots > button:hover span{
+    background-color: #03763e;
+}
+
+
+/* Link tham khảo: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_active_element */
+.owl-dots > .active span{
+    background-color: #03763e;
+}
+
+.owl-dots span{
+    display: block;
+    width: 7px;
+    height: 7px;
+    margin: 5px 6px;
+    background-color: #d6d6d6;
+    border-radius: 30px;
+}

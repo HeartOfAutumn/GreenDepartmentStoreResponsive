@@ -1,0 +1,60 @@
+.colmenu{
+    position: fixed;
+    background-color: #fff;
+    height: 90vh;
+    width: 17.8%;   /*Theo body*/
+    top: 12px;
+    left: 5.5%;     /*Theo body*/
+    border-radius: 4px 4px 0 0;
+}
+
+.colmenu>span{
+    height: 38px;  
+    width: 100%;    /*Theo colmenu*/
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.colmenu i{
+    height: 21px;
+    width: 21px;
+}
+
+.colmenu p{
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.colmenu-ul{
+    width: 100%;    /*Theo colmenu*/
+    height: 100%;   /*Theo colmenu*/
+    padding-inline-start: 0px;
+    flex-direction: column;
+    position: relative;
+}
+
+.colmenu-ul>li{
+    display: inline-block;
+    width: 100%;    /*Theo colmenu-ul*/
+    height: 7%;    /*Theo colmunu-ul*/
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Chỗ này cầm xem xét */
+.colmenu-ul>li::after{
+    position: absolute;     /*Theo .colmenu-ul*/
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 5px solid #979797;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    right: 14px;
+}
+/* Kết thúc xem xét */
