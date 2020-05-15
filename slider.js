@@ -9,3 +9,5 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
     });
 }
+
+// Link vấn đề tiếp theo: https://stackoverflow.com/questions/195951/how-can-i-change-an-elements-class-with-javascript
