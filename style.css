@@ -110,6 +110,7 @@ header{
 .location-container>div>div{
     width: 100%;    /*Theo .location-container>div*/
     height: 50%;   /*Theo .location-container>div*/
+    position: relative;
 }
 
 .location-container .shipto{
@@ -123,6 +124,18 @@ header{
     width: 15px;     /*Theo .location-container>div>div*/
     height: 15px;   /*Theo .location-container>div>div*/
 }
+
+/* Chỗ này cần xem xét */
+.location-container i::after{
+    position: absolute;     /*Theo location-container>div>div*/
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 13px solid #fff;
+    border-left: 7.5px solid transparent;
+    border-right: 7.5px solid transparent;
+}
+/* Hết xem xét */
 
 .location-container .current-locate{
     text-align: center;
@@ -186,6 +199,7 @@ header{
     height: 100%;   /*Theo colmenu*/
     padding-inline-start: 0px;
     flex-direction: column;
+    position: relative;
 }
 
 .colmenu-ul>li{
@@ -198,6 +212,19 @@ header{
     padding: 10px;
     border-bottom: 1px solid #e5e5e5;
 }
+
+/* Chỗ này cầm xem xét */
+.colmenu-ul>li::after{
+    position: absolute;     /*Theo .colmenu-ul*/
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 5px solid #979797;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    right: 14px;
+}
+/* Kết thúc xem xét */
 
 section{
     background-color: #e9edf0;
@@ -217,7 +244,68 @@ section{
 
 .slide-home{
     width: 100%;    /*Theo colcontent*/
-    height: 20%;    /*Theo colcontent*/
+    height: 200px;
+    position: relative;
+}
+
+.owl-stage-outer{
+
+}
+
+.owl-nav{
+    
+}
+
+.owl-prev,
+.owl-next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    padding: 0;
+    background-color: transparent;
+}
+
+.owl-prev{
+    margin-left: 10px;     /*Canh theo slide-home*/
+    content: "";
+    width: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+}
+
+.owl-next{
+    right: 0;       /*Canh theo slide-home*/
+    margin-right: 10px;     /*Canh theo slide-home*/
+    content: "";
+    width: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+}
+
+.owl-dots{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+.owl-dots>button{
+    display: inline-block;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.owl-dots span{
+    display: block;
+    width: 7px;
+    height: 7px;
+    margin: 5px 6px;
+    background-color: #d6d6d6;
+    border-radius: 30px;
 }
 
 .groupcate{
