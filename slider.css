@@ -14,6 +14,14 @@
     height: 100%;   /*Theo slide-home*/
 }
 
+.owl-stage-outer img{
+    display: none;
+}
+
+.owl-stage-outer img:nth-child(1){
+    display: block;
+}
+
 .owl-nav{
     
 }
@@ -70,8 +78,6 @@
     background-color: #03763e;
 }
 
-
-/* Link tham khảo: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_active_element */
 .owl-dots > .active span{
     background-color: #03763e;
 }

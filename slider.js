@@ -1,13 +1,80 @@
+var index=0;
 
-//Tạo hiệu ứng active cho các id="owl-dots"
-var header = document.getElementById("owl-dots");
-var btns = header.getElementsByClassName("owl-dot");
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+var owlDot = document.getElementById("owl-dots");
+var owlDots = owlDot.getElementsByTagName("button");
+
+var owlStageOuter = document.getElementById("owl-stage-outer");
+var owlStageOuters = document.getElementsByTagName("img");
+
+var owlPrev = document.getElementById("owl-prev")
+var owlNext = document.getElementById("owl-next")
+
+var container = [...owlDots];
+
+function changeSlide(index){
+    clearAll_owlStageOuters();
+    active_owlDots(index);
+    owlStageOuters[index].style.display = "block";
+};
+
+container.forEach(item=>{
+    item.addEventListener("click", () => {
+        index = container.indexOf(item);
+        changeSlide(index);
     });
+});
+
+function clearAll_owlStageOuters(){
+   for(var i=0; i<owlStageOuters.length; i++){
+       owlStageOuters[i].style.display = "none";
+   }
+};
+
+function active_owlDots(index){
+    for(var i=0; i<owlDots.length; i++){
+        if(owlDots[i].classList.contains("active")){
+            owlDots[i].classList.remove("active")
+        }
+    }
+    owlDots[index].classList.add("active");
+};
+
+owlPrev.addEventListener("click", function(){
+    if(index == 0){
+        index = owlStageOuters.length-1;
+    }
+    else{
+        index--;
+    }
+    changeSlide(index);
+});
+
+owlNext.addEventListener("click", function(){
+    if(index == owlStageOuters.length-1){
+        index = 0;
+    }
+    else{
+        index++;
+    }
+    changeSlide(index);
+});
+
+function nextSlide(){
+    if(index == owlStageOuters.length-1){
+        index = 0;
+    }
+    else{
+        index++;
+    }
+    changeSlide(index);
+ }
+
+ function resetTimer(){
+    // when click to indicator or controls button 
+    // stop timer 
+    clearInterval(timer);
+    // then started again timer
+    timer=setInterval(autoPlay,4000);
 }
 
-// Link vấn đề tiếp theo: https://stackoverflow.com/questions/195951/how-can-i-change-an-elements-class-with-javascript
+let timer=setInterval(nextSlide, 4000);
