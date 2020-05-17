@@ -138,6 +138,13 @@
     justify-content: center;
 }
 
-.temcart>div>i{
+.temcart>div{
+    align-items: center;
+    justify-content: center;
+}
 
+.temcart>div>i{
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
 }
