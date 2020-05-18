@@ -3,8 +3,9 @@ var index=0;
 var owlDot = document.getElementById("owl-dots");
 var owlDots = owlDot.getElementsByTagName("button");
 
+
 var owlStageOuter = document.getElementById("owl-stage-outer");
-var owlStageOuters = document.getElementsByTagName("img");
+var owlStageOuters = owlStageOuter.getElementsByTagName("img");
 
 var owlPrev = document.getElementById("owl-prev")
 var owlNext = document.getElementById("owl-next")
