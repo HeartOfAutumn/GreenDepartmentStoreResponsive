@@ -33,7 +33,6 @@ section{
 .colcontent{
     margin-left: 20%;   /*Theo section*/
     width: 80%;     /*Theo section*/
-    height: 10000px;
     padding-top: 10px;
     padding-left: 10px;
 }
@@ -240,6 +239,7 @@ ul{
 .homenews{
     width: 100%;    /*Theo colcontent*/
     background: #fff;
+    padding-bottom: 10px;
 }
 
 .hometitle a{
@@ -275,19 +275,255 @@ ul{
     width: 40%;     /*Theo homenews*/
 }
 
+.newlist a{
+    display: block;
+    overflow: hidden;
+    border-top: 1px solid #f3f3f3;
+    padding: 10px 0;
+}
+
+.newlist a:first-child{
+    border-top: 0;
+    padding-top: 0;
+}
+
+.newlist img{
+    width: 65px;
+    height: auto;   /*Theo ???*/
+    float: left;
+    margin-right: 10px;
+}
+
+.newlist  p{
+    margin-right: 10px;
+    font-size: 13px;
+    color: #4a4a4a;
+}
+
 footer{
     background-color: #e9edf0;
     width: 100%;    /*Theo body*/
-    min-height: 300px;
     padding: 0 5.5%;    /*Theo body*/
 }
 
 footer>div{
-    min-height: 300px;
     margin-left: 20%;   /*Theo footer*/
     width: 80%;     /*Theo footer*/
     padding-left: 10px;
     padding-top: 10px;
+}
+
+.boxfooter{
+    
+}
+
+.boxfooter>div{
+    background-color: #fff;
+}
+
+.boxfooter .benefits{
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 13px;
+}
+
+.benefits>div{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefits>div:nth-child(2){
+    border-left: 1px solid #ccc;
+}
+
+.benefits>div i{
+    width: 27px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.detail{
+    width: 100%;
+
+}
+
+.detail aside{
+    width: 50%;
+}
+
+.detail aside:nth-child(1){
+    padding-left: 10px;
+}
+
+.detail aside:nth-child(2){
+    padding-left: 10%;
+}
+
+
+.callcenter{
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #008848;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.callcenter a{
+    color: #008848;
+}
+
+.callcenter i{
+    width: 16px;
+    height: 17px;
+}
+
+.linkstatic{
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.linkstatic a{
+    float: left;
+    overflow: hidden;
+    font-size: 12px;
+    color: #288ad6;
+    line-height: 28px;
+    text-align: left;
+    padding: 0;
+    width: 33%;
+}
+
+.linkstatic a:nth-child(-n+6)::before{
+    content: '•';
+    display: inline-block;
+    font-size: 8px;
+    color: #288ad6;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
+.linkstatic a.recruitment{
+    background-color: #ff4500;
+    color: #fff !important;
+    border-radius: 2px;
+    text-indent: 8px;
+    width: 80px !important;
+}
+
+.linkstatic a.hot-Job{
+    font-weight: bold;
+    margin-left: 8px;
+    width: 50% !important;
+}
+
+.webmember{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.webmember span{
+    font-size: 13px;
+    color: #4a4a4a;
+    vertical-align: top;
+}
+
+.webmember .link-member{
+    display: inline-block;
+}
+
+.link-member i:nth-child(1){
+    width: 115px;
+    height: 18px;
+}
+
+.link-member i:nth-child(2){
+    width: 115px;
+    height: 18px;
+}
+
+.link-member i:nth-child(3){
+    width: 63px;
+    height: 18px;
+}
+
+.stores{
+    font-size: 12px;
+}
+
+.stores i{
+    width: 25px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.stores a{
+    color: #288ad6;
+}
+
+.stores div:nth-child(1){
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.stores div:nth-child(1) a{
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.stores>div span{
+    font-weight: 700;
+    color: #a30a1d;
+}
+
+.stores .lab_promo{
+    display: inline-block;
+    color: #f00;
+}
+
+.stores div:nth-child(n+2){
+    margin: 5px 0;
+}
+
+.social i:nth-child(1){
+    width: 85px;
+    height: 32px
+}
+
+.social i:nth-child(2){
+    width: 100px;
+    height: 20px;
+}
+
+.social i:nth-child(3){
+    width: 96px;
+    height: 20px;
+}
+
+.social i:nth-child(4){
+    width: 85px;
+    height: 24px;
+}
+
+.social-left i{
+    vertical-align: middle;
+}
+
+.copyright{
+    font-size: 10px;
+    color: #999;
+    text-align: center;
+    background: #e9edf0;
+    margin-bottom: 5px;
+}
+
+.copyright a{
+    color: #999;
+    text-decoration: underline;
 }
 
 /* Chưa cần làm bây giờ */
