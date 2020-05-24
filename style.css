@@ -529,6 +529,16 @@ footer>div{
 /* Chưa cần làm bây giờ */
 .stickyfeedback{
     position: fixed;
+    left: 5.5%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    z-index: 20;
+}
+
+.stickyfeedback i{
+    width: 41px;
+    height: 40px;
+    border-radius: 50%;
 }
 
 #back-top{

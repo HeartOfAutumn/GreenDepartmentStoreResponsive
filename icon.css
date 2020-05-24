@@ -2,6 +2,7 @@
     display: inline-block;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    vertical-align: middle;
 }
 
 .bhx-logo{
@@ -59,3 +60,17 @@
 .dmca-badge{
     background-image: url(icon/dmca-badge.png);
 }
+
+.bhx-feedback{
+    background-image: url(icon/bhx-feedback.png);
+}
+
+.bhx-radio{
+    background-image: url(icon/check-0.png);
+}
+
+.bhx-check-1{
+    background-image: url(icon/check-1.png);
+}
+
+

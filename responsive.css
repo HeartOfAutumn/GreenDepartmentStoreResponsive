@@ -1,0 +1,132 @@
+@media screen and (max-width: 700px){
+    header{
+        padding: 0;
+    }
+
+    .tophead{
+        width: 100%;
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+
+    .colmenu{
+        display: none;
+        width: 60%;
+        top: 0px;
+        left: 0px;
+    }
+
+    .logo{
+        width: 30%;
+    }
+
+    .mainsearch{
+        width: 60%;
+    }
+
+    .hiscart{
+        width: 100%;
+    }
+
+    .ocmenu{
+        width: 10%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .ocmenu i{
+        width: 80%;
+        height: 90%;
+    }
+
+    .location-container{
+        width: 30%;
+    }
+
+    section{
+        padding: 0px;
+        margin-top: 100px;
+    }
+
+    .colcontent{
+        padding-left: 0px;
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .listgroup{
+        flex-wrap: wrap;
+    }
+
+    .listgroup a {
+        width: 20%;
+    }
+
+    .groupfeature ul{
+        flex-wrap: wrap;
+    }
+
+    .groupfeature ul>li{
+        width: 50%;
+    }
+
+    .hometitle+div {
+        flex-wrap: wrap;
+    }
+
+    .hometitle+div{
+        flex-wrap: wrap;
+    }
+
+    .homenews .newvideo{
+        width: 100%;
+    }
+
+    .homenews .newlist{
+        width: 100%;
+        padding: 10px;
+    }
+
+    footer{
+        padding: 0;
+    }
+
+    .boxfooter{
+        margin-left: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .benefits{
+        background-color: rgba(0,0,0,-0.95);
+    }
+
+    .benefits div>i{
+        border-radius: 50%;
+    }
+
+    .detail{
+        flex-wrap: wrap;
+    }
+
+    .detail aside{
+        width: 100%;
+    }
+
+    .detail aside:nth-child(2){
+        padding-left: 10px;
+    }
+
+    .copyright{
+        margin-left: 0px;
+        width: 100%;
+        margin-right: 5.5%;
+    }
+
+    .stickyfeedback{
+        bottom: 5%;
+        left: auto;
+        right: 5.5%;
+    }
+}

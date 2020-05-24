@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="colmenu.css">
     <link rel="stylesheet" href="slider.css">
     <link rel="stylesheet" href="icon.css">
+    <link rel="stylesheet" href="ajs.css">
+    <link rel="stylesheet" href="responsive.css">
     <title>Bách hóa xanh</title>
 </head>
 <body>
@@ -27,6 +29,9 @@
             </form>
             <div class="hiscart row">
                 <div class="row">
+                    <div class="ocmenu">
+                        <i class="bhx bhx-navmenu"></i>
+                    </div>
                     <div class="location-container row">
                         <div>
                             <div class="row">
@@ -443,10 +448,65 @@
         <div class="copyright">© 2018. Công Ty Cổ Phần Thương Mại Bách Hoá Xanh. GPDKKD: 0310471746 do sở KH &amp; ĐT TP.HCM cấp ngày 23/11/2010. GP số 40/GP-TTĐT do Sở TTTT TP HCM cấp ngày 06/06/2019. Địa chỉ: 128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí Minh. Email:lienhe@bachhoaxanh.com Chịu trách nhiệm nội dung: Trần Nhật Linh. <a href="/quy-che-hoat-dong">Xem chính sách sử dụng web</a></div>
     </footer>
     <!--  -->
-    <div class="stickyfeedback"></div>
+    <div class="stickyfeedback" id="stickyfeedback">
+        <a href="#" class="temcart">
+            <i class="bhx bhx-feedback"></i>
+        </a>
+    </div>
     <div id="back-top"></div>
 
+    <!-- popup feedback -->
+    <div class="ajs-modal" id="ajs-modal">
+        <div class="ajs-dialog">
+            <div class="ajs-body">
+                <div class="ajs-content">
+                    <div class="popup-contact">
+                        <div class="pcontact">
+                            <h1 class="title">
+                                Bách hoá xanh xin hân hạnh được hỗ trợ quý khách
+                            </h1>
+                            <form class="frmContact">
+                                <div class="js-float-label-wrapper">
+                                    <label class="contact-content">Nội dung (xin quý khách mô tả chi tiết)</label>
+                                    <textarea name="txtContent" rows="3" placeholder="Nội dung (xin quý khách mô tả chi tiết)"></textarea>
+                                </div>
+                                <div class="gendercomment">
+                                    <input type="radio" id="male" name="gender" value="male">
+                                    <label for="male">Anh</label><br>
+                                    <input type="radio" id="female" name="gender" value="female">
+                                    <label for="female">Chị</label><br>
+                                </div>
+                                <div class="js-float-label-wrapper">
+                                    <label class="contact-name">Họ và tên</label>
+                                    <input type="text" name="txtFullName" placeholder="Họ và tên của quý khách">
+                                </div>
+                                <div class="js-float-label-wrapper">
+                                    <label class="contact-phone">Số điện thoại</label>
+                                    <input type="number" name="txtPhoneNumber" placeholder="Số điện thoại của quý khách" maxlength="11">
+                                </div>
+                                <div class="js-float-label-wrapper">
+                                    <label class="contact-email">Email</label>
+                                    <input type="text" name="txtEmail" placeholder="Email của quý khách">
+                                </div>
+                                <div class="contact-vvbtn">
+                                    <button title="Gửi góp ý cho Bách hóa Xanh" type="submit">Gửi góp ý</button>
+                                </div>
+                                <div class="contact-vvbtn">
+                                    <a class="closePopupupContact">Đóng</a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="pAlert" style="display: none;">
+                            <div class="message-success">Gửi thành công. Cảm ơn  anh đã đóng góp ý kiến</div>
+                            <button class="closePopupupContact">Đóng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="slider.js" type="text/javascript"></script>
+    <script src="ajs.js" type="text/javascript"></script>
 </body>
 </html>

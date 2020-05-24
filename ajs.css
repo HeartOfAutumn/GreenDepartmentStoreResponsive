@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.ajs-modal{
+    padding: 0 2%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+}
+
+.ajs-dialog{
+    min-width: 350px;
+    width: 50%;
+    max-width: 480px;
+    margin: 5% auto;
+    position: relative;
+    min-height: 110px;
+    padding: 10px 6px 0 6px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.ajs-content{
+    padding: 5px;
+    font: 14px/18px Helvetica,Arial,sans-serif;
+    color: #333;
+}
+
+.title{
+    font-size: 22px;
+    color: #333;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 10px;
+    border-left: 5px solid #008848;
+}
+
+.frmContact{
+    overflow: hidden;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.contact-content{
+    display: none;
+}
+
+.gendercomment{
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.gendercomment input{
+    margin-right: 5px;
+}
+
+.gendercomment label{
+    margin-right: 15px;
+}
+.js-float-label-wrapper:nth-child(1){
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+}
+
+.js-float-label-wrapper label{
+    display: none;  
+}
+
+.js-float-label-wrapper input{
+    display: block;
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+    width: 100%;
+    margin-top: 14px;
+    clear: both;
+    height: 48px;
+    min-height: 48px;
+    max-height: 48px;
+    outline: none;
+}
+
+textarea{
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+    height: 70px;
+    min-height: 70px;
+    max-height: 70px;
+    background-color: transparent;
+    font: 14px/18px Helvetica,Arial,sans-serif;
+    color: #333;
+}
+
+.contact-vvbtn button{
+    display: inline-block;
+    overflow: hidden;
+    padding: 10px 0;
+    border: 1px solid #008848;
+    border-radius: 4px;
+    background: #008848;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    margin-top: 14px;
+    font-weight: 600;
+    min-width: unset;
+    cursor: pointer;
+    box-shadow: 0 2px 2px rgba(0,0,0,.25);
+}
+
+.contact-vvbtn a{
+    display: block;
+    overflow: hidden;
+    padding: 10px 0;
+    border: 1px solid #008848;
+    border-radius: 4px;
+    background: #fff;
+    color: #008848;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    margin-top: 14px;
+    font-weight: 600;
+    min-width: unset;
+    cursor: pointer;
+}
