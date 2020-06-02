@@ -1,0 +1,33 @@
+@media screen and (max-width: 700px){
+    .colmenu{
+        display: none;
+        width: 60%;
+        top: 0px;
+        left: 0px;
+    }
+
+    .colcontent .rowdetail{
+        flex-wrap: wrap;
+    }
+    
+    .slide-home {
+        width: 100%;
+    }
+    
+    .infosell {
+        width: 100%;
+    }
+    
+    .colcontent .rowinfo{
+        flex-wrap: wrap;
+    }
+    
+    .rowinfo .leftcolrelate{
+        width: 100%;
+    }
+    
+    .rowinfo .rightcolrelate{
+        display: none;
+    }
+}
+

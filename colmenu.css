@@ -25,6 +25,7 @@
 .colmenu p{
     text-transform: uppercase;
     padding-left: 10px;
+    font-size: 15px;
 }
 
 .colmenu-ul{
@@ -44,6 +45,9 @@
     justify-content: flex-start;
     padding: 10px;
     border-bottom: 1px solid #e5e5e5;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 /* Chỗ này cầm xem xét */

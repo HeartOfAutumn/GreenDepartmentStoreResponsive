@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tophead.css">
+    <link rel="stylesheet" href="colmenu.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="ajs.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="detail.css">
+    <link rel="stylesheet" href="icon.css">
+    <link rel="stylesheet" href="responsive_detail.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="tophead row">
+            <a href="index.html" class="logo row">
+                <i class="bhx bhx-logo"></i>
+            </a>
+            <form class="mainsearch row">
+                <div>
+                    <input type="text" name="key" id="text-search" placeholder="Bạn tìm gì..." />
+                    <button type="submit" class="row">
+                        <i class="bhx bhx-search"></i>
+                    </button>
+                </div>
+            </form>
+            <div class="hiscart row">
+                <div class="row">
+                    <div class="ocmenu">
+                        <i class="bhx bhx-navmenu"></i>
+                    </div>
+                    <div class="location-container row">
+                        <div>
+                            <div class="row">
+                                <div class="shipto">Giao tại</div>
+                                <i></i>
+                            </div>
+                            <div class="current-locate">TP.HCM</div>
+                        </div>
+                    </div>
+                    <a href="#" class="histories">
+                        Đơn hàng
+                        <br/>
+                        của bạn
+                    </a>
+                </div>
+                <a href="#" class="temcart row">
+                    <div class="row">
+                        <b>Giỏ hàng</b>
+                        <i class="bhx bhx-cart"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <aside class="colmenu">
+            <span class="row">
+                <i class="bhx bhx-navmenu"></i>
+                <p>Danh mục sản phẩm</p>
+            </span>
+            <ul class="colmenu-ul row">
+                <li>Đồ uống các loại</li>
+                <li>Sữa các loại</li>
+                <li>Chăm sóc cho bé</li>
+                <li>Mì, cháo, phở ăn liền</li>
+                <li>Dầu ăn, nước chấm, gia vị</li>
+                <li>Bánh kẹo các loại</li>
+                <li>Chăm sóc cá nhân</li>
+                <li>Vệ sinh nhà cửa</li>
+                <li>Đồ dùng gia đình</li>
+                <li>Gạo, thực phẩm khác</li>
+                <li>Đồ đông lạnh, đồ mát</li>
+            </ul>
+        </aside>
+    </header>
+
+    <section>
+        <aside class="colcontent">
+            <ul class="breadcrumb">
+                <li><a href="#" title="Trang chủ">Trang chủ</a></li>
+                <li><a href="#">Sữa bột pha sẵn </a></li>
+                <li><a href="#">Sữa bột pha sẵn Nestlé</a></li>
+            </ul>
+            <div class="rowdetail row">
+                <aside class="slide-home">
+                    <div class="owl-stage-outer" id="owl-stage-outer">
+                        <img src="images/sua1.jpg">
+                        <img src="images/sua2.jpg">
+                        <img src="images/sua3.jpg">
+                        <img src="images/sua4.jpg">
+                        <img src="images/sua5.jpg">
+                    </div>
+                    <div class="owl-nav" id="owl-nav">
+                        <button type="button" id="owl-prev" class="owl-prev"></button>
+                        <button type="button" id="owl-next" class="owl-next"></button>
+                    </div>
+                    <div class="owl-dots" id="owl-dots">
+                        <button type="button" class="owl-dot active"><span></span></button>
+                        <button type="button" class="owl-dot"><span></span></button>
+                        <button type="button" class="owl-dot"><span></span></button>
+                        <button type="button" class="owl-dot"><span></span></button>
+                        <button type="button" class="owl-dot"><span></span></button>
+                    </div>
+                </aside>
+                <aside class="infosell">
+                    <h1 class="nameproduct">Thùng 24 hộp sữa dinh dưỡng pha sẵn Nestlé Nan Optipro 185ml</h1>
+                    <div class="expireddate">
+                        <span>HSD còn 6 tháng</span> 
+                        <span class="btnwish">
+                            <i class="bhx bhx-wish"></i>
+                             Yêu thích
+                        </span>
+                    </div>
+                    <div class="ratinglist-price">
+                        <div class="boxprice"><strong>348.000₫</strong></div>
+                        <div class="rating">
+                            <span onclick="location.href='#boxcomment'">3 đánh giá</span>
+                            <div>
+                                <i class="bhx bhx-ystar"></i>
+                                <i class="bhx bhx-ystar"></i>
+                                <i class="bhx bhx-ystar"></i>
+                                <i class="bhx bhx-ystar"></i>
+                                <i class="bhx bhx-ystar"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="location_user">
+                        <div class="current_location row">
+                            <i class="bhx bhx-locate"></i>
+                            <p>Sản phẩm tại <b>TP.HCM</b></p>
+                            <b class="disname"> </b> 
+                            <i class="bhx bhx-check"></i>
+                        </div>
+                        <!--<div class="prov_lst top hidden">
+                            <span class="arrow-icon"></span>
+                            <div class="select-prov">
+                                <select class="lst-prov select2-hidden-accessible" data-select2-id="4" tabindex="-1" aria-hidden="true">
+                                    <option value="3" selected="" data-shortname="TP.HCM" data-select2-id="6">TP. Hồ Chí Minh</option>
+                                    <option value="8" data-shortname="Biên Hoà" data-select2-id="7">TP. Biên Hoà</option>
+                                    <option value="6" data-shortname="Buôn Ma Thuột" data-select2-id="8">TP. Buôn Ma Thuột</option>
+                                    <option value="102" data-shortname="Vũng Tàu" data-select2-id="9">TP. Vũng Tàu</option>
+                                </select>
+                                <span class="select2 select2-container select2-container--default containerprov" dir="ltr" data-select2-id="10" style="width: 100%;">
+                                    <span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-nl3t-container">
+                                        <span class="select2-selection__rendered" id="select2-nl3t-container" role="textbox" aria-readonly="true" title="TP. Hồ Chí Minh">TP. Hồ Chí Minh</span>
+                                        <span class="select2-selection__arrow" role="presentation">
+                                            <b role="presentation"></b>
+                                        </span>
+                                    </span>
+                                </span>
+                                <span class="dropdown-wrapper" aria-hidden="true"></span>
+                            </span>
+                        </div>
+                        <div class="select-dist">
+                            <select class="lst-district select2-hidden-accessible" data-select2-id="14" tabindex="-1" aria-hidden="true">
+                                <option value="" data-select2-id="16"></option>
+                                <option value="16" data-select2-id="17">Quận 1</option>
+                                <option value="17" data-select2-id="18">Quận 2</option>
+                                <option value="18" data-select2-id="19">Quận 3</option>
+                                <option value="19" data-select2-id="20">Quận 4</option>
+                                <option value="20" data-select2-id="21">Quận 5</option>
+                                <option value="21" data-select2-id="22">Quận 6</option>
+                                <option value="22" data-select2-id="23">Quận 7</option>
+                                <option value="23" data-select2-id="24">Quận 8</option>
+                                <option value="24" data-select2-id="25">Quận 9</option>
+                                <option value="25" data-select2-id="26">Quận 10</option>
+                                <option value="26" data-select2-id="27">Quận 11</option>
+                                <option value="27" data-select2-id="28">Quận 12</option>
+                                <option value="30" data-select2-id="29">Quận Tân Bình</option>
+                                <option value="33" data-select2-id="30">Quận Tân Phú</option>
+                                <option value="52" data-select2-id="31">Quận Phú Nhuận</option>
+                                <option value="29" data-select2-id="32">Quận Gò Vấp</option>
+                                <option value="51" data-select2-id="33">Quận Bình Thạnh</option>
+                                <option value="28" data-select2-id="34">Quận Thủ Đức</option>
+                                <option value="31" data-select2-id="35">Quận Bình Tân</option>
+                                <option value="32" data-select2-id="36">Huyện Hóc Môn</option>
+                                <option value="35" data-select2-id="37">Huyện Nhà Bè</option>
+                                <option value="36" data-select2-id="38">Huyện Bình Chánh</option>
+                            </select>
+                            <span class="select2 select2-container select2-container--default containerprov" dir="ltr" data-select2-id="39" style="width: 100%;">
+                                <span class="selection">
+                                    <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-t9fr-container">
+                                        <span class="select2-selection__rendered" id="select2-t9fr-container" role="textbox" aria-readonly="true">
+                                            <span class="select2-selection__placeholder">Chọn Quận/huyện</span>
+                                        </span>
+                                        <span class="select2-selection__arrow" role="presentation">
+                                            <b role="presentation"></b>
+                                        </span>
+                                    </span>
+                                </span>
+                                <span class="dropdown-wrapper" aria-hidden="true"></span>
+                            </span>
+                        </div>-->
+                        <div class="clr"></div>
+                    </div>
+                    <div class="chonloai">
+                        <a href="#" data-productid="182393" data-productcode="1053140000126"> 
+                            <img src="images/loc-4-hop-sua-dinh-duong-pha-san-nestle-nan-optipro-185ml-202002251058411294_300x300.jpg" width="32" height="32" alt="Lốc 4 hộp sữa dinh dưỡng pha sẵn Nestlé Nan Optipro 185ml">
+                            <div class="info-product">
+                                <i class="bhx bhx-opt"></i> 
+                                <b>4 hộp</b> 
+                                <strong>59.500₫</strong>
+                            </div>
+                        </a>
+                        <a href="#" class="chon" data-productid="182492" data-productcode="1053140000127"> 
+                            <img src="images/thung-24-hop-sua-dinh-duong-pha-san-nestle-nan-optipro-185ml-202003011804330734_300x300.jpg" width="32" height="32" alt="Thùng 24 hộp sữa dinh dưỡng pha sẵn Nestlé Nan Optipro 185ml">
+                            <div class="info-product">
+                                <i class="bhx bhx-opt"></i> 
+                                <b>Thùng 24 hộp</b> 
+                                <strong>348.000₫</strong>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="javascript:" class="choosebuy" data-id="182492">Chọn mua</a>
+                    <div class="shipping">
+                        <div>
+                            <i class="bhx bhx-sship"></i> 
+                            <span> Đặt online giao tận nhà ĐÚNG GIỜ (nếu trễ đền 20.000đ)</span>
+                        </div>
+                        <div>
+                            <i class="bhx bhx-swap"></i> 
+                            <span>Đổi, trả sản phẩm trong 48 giờ </span> 
+                            <a href="/kinh-nghiem-hay/chinh-sach-doi-tra-1230736" id="detailReturn">(Xem chi tiết)</a>
+                        </div>
+                    </div>
+                    <div class="boxbanner">
+                        <a href="#" class="item" title="HÓA ĐƠN 50.000đ ĐƯỢC MUA SẢN PHẨM GIÁ SỐC 22/5"> <img src="images/hoa-don-50000d-duoc-mua-san-pham-gia-soc-22-5-290520201633.jpg" width="450" height="80"> </a>
+                    </div>
+                </aside>
+            </div>
+            <div class="relative"></div>
+            <div class="rowinfo row">
+                <aside class="leftcolrelate">
+                    <div class="details">
+                        <strong class="textinfpro" id="specification">Thông tin sản phẩm</strong>
+                            <div class="short-description"></div>
+                                    <ul class="infoproduct">
+                                        <li>
+                                            <span>Phù hợp</span>
+                                                <div>Giúp trẻ dễ tiêu hoá, tăng cường sức đề kháng và tăng cân khoẻ mạnh</div>
+                                        </li>
+                                        <li>
+                                            <span>Độ tuổi</span>
+                                                <div>Từ 2 tuổi trở lên</div>
+                                        </li>
+                                        <li>
+                                            <span>Dung tích</span>
+                                                <div>185ml</div>
+                                        </li>
+                                        <li>
+                                            <span>Thành phần</span>
+                                                <div>Nước, sữa bột tách kem (9%), hỗn hợp dầu thực vật (dầu cọ, dầu hạt cải có hàm lượng erucic acid thấp, dầu dừa, dầu hướng dương), đường, chất bơ từ sữa, chất xơ hoà tan oligofructose, chất ổn định (460(i), 471, 466, 407, 500(ii), 332(ii)), calci phospat tự nhiên từ sữa, hỗn hợp các khoáng chất (sắt sulfat, kẽm sulfat), hỗn hợp các vitamin (vitamin C, E, A, niacin, calci D-pantothenat, B1, B6, acid folic, K1, biotin) và hương vani tổng hợp.</div>
+                                        </li>
+                                        <li>
+                                            <span>Năng lượng</span>
+                                                <div>144kcal/ 185ml</div>
+                                        </li>
+                                        <li>
+                                            <span>Khuyên dùng</span>
+                                                <div>Nên dùng 2 hộp mỗi ngày.</div>
+                                        </li>
+                                        <li>
+                                            <span>Thương hiệu</span>
+                                                <div>Nestlé (Thụy Sỹ)</div>
+                                        </li>
+                                        <li>
+                                            <span>Sản xuất tại</span>
+                                                <div>Việt Nam</div>
+                                        </li>
+                            </ul>
+                                            <div class="description  show-moreinfo">
+                                        <h3><strong>Thành phần và công dụng:</strong></h3>
+                
+                <ul>
+                    <li>Sữa bột pha sẵn&nbsp;Nestlé&nbsp;Nan Optipro&nbsp;chứa các thành phần là nước, đường,&nbsp;sữa bột tách kem 9%,&nbsp;hỗn hợp các khoáng chất,&nbsp;hỗn hợp dầu thực vật,&nbsp;hỗn hợp các vitamin, hương vani tổng hợp,...</li>
+                    <li>Được sản xuất theo quy chuẩn chất lượng nghiêm ngặt, cho sản phẩm đảm bảo vệ sinh an toàn thực phẩm tiên tiến, không chất tạo ngọt tổng hợp, không chất bảo quản, mọi người yên tâm khi dùng.</li>
+                    <li>Cung cấp cho cơ thể nhiều dưỡng chất thiết yếu, chứa lượng&nbsp;đạm Optipro,&nbsp;Omega 3,&nbsp;Canxi và vitamin D dồi dào giúp hệ tiêu hóa phát triển tốt, dễ hấp thu dưỡng chất, tăng cân, tăng sức đề kháng, tăng cường sức khỏe hiệu quả, phát triển chiều cao, trí não và thị giác tối ưu.</li>
+                </ul>
+                
+                <h3><strong>Hướng dẫn sử dụng:</strong></h3>
+                
+                <ul>
+                    <li>Sử dụng trực tiếp. Nên uống 2 hộp sữa 185ml mỗi ngày.</li>
+                    <li>Lưu ý: Sản phẩm không dùng cho người không dung nạp được sữa bò, dị ứng với lactose. Không sử dụng cho trẻ dưới 1 tuổi,&nbsp;nên dùng cho trẻ em từ 2 tuổi trở lên.&nbsp;</li>
+                </ul>
+                
+                <h3><strong>Bảo quản:</strong></h3>
+                
+                <ul>
+                    <li>Bảo quản nơi khô ráo,&nbsp;thoáng mát, tránh ánh mặt trời trực tiếp.</li>
+                </ul>
+                                    </div>
+                                    
+                    </div>
+                </aside>
+                <aside class="rightcolrelate">
+                    <div class="groupcate">
+                        <div class="groupname">Nhóm hàng thường mua</div>
+                        <div class="listgroup row">
+                            <a href="#">
+                                <img src="images/sua-tuoi.png">
+                                <span>Sữa tươi</span>
+                            </a>
+                            <a href="#">
+                                <img src="images/nuoc-ngot.png">
+                                <span>Nước ngọt, nước giải khát</span>
+                            </a>
+                            <a href="#">
+                                <img src="images/mi-an-lien.png">
+                                <span>Mì ăn liền</span>
+                            </a>
+                            <a href="#">
+                                <img src="images/dau-an.png">
+                                <span>Dầu ăn</span>
+                            </a>
+                            <a href="#">
+                                <img src="images/khan-giay-uot.png">
+                                <span>Khăn giấy ướt</span>
+                            </a>
+                            <a href="#">
+                                <img src="images/dau-goi.png">
+                                <span>Dầu gội</span>
+                            </a>
+                            <a href="#">
+                                <img src="images/gao.png">
+                                <span>Gạo</span>
+                            </a>
+                            <a href="#">
+                                <img src="images/thit-hai-san-dong-lanh.png">
+                                <span>Thịt, hải sản, rau củ đông lạnh</span>
+                            </a>
+                            <a href="#">
+                                <img src="images/trai-cay.png">
+                                <span>Trái cây nhập khẩu</span>
+                            </a>
+                            <a href="#">
+                                <img src="images/bia.png">
+                                <span>Bia nước uống có cồn</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="homenews">
+                        <h2 class="hometitle">
+                            <a href="#">Mẹo hay trong gia đình</a>
+                        </h2>
+                        <div class="row">
+                            <div class="newlist">
+                                <a href="#">
+                                    <img src="images/newlist-1.jpg">
+                                    <p>Bí quyết luộc lòng heo vừa trắng lại giòn sần sật </p>
+                                </a>
+                                <a href="#">
+                                    <img src="images/newlist-2.jpg">
+                                    <p>Mùa hè ăn những loại quả này mỗi ngày để da đẹp từ trong ra ngoài</p>
+                                </a>
+                                <a href="#">
+                                    <img src="images/newlist-3.jpg">
+                                    <p>Tác hại kinh khủng của việc dùng khăn ướt tẩy trang</p>
+                                </a>
+                                <a href="#">
+                                    <img src="images/newlist-4.jpg">
+                                    <p>Học hỏi ngay bí quyết làm đẹp da một cách tự nhiên của phụ nữ Nhật bản</p>
+                                </a>
+                                <a href="#">
+                                    <img src="images/newlist-5.jpg">
+                                    <p>Mẹo đánh bay mùi đồ nướng bám trên áo nhanh chóng với các nguyên liệu đơn giản</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </aside>
+    </section>
+
+    <footer>
+        <div class="boxfooter">
+            <div class="benefits row">
+                <div class="row">
+                    <i class="bhx bhx-sship"></i>
+                    <p>Đặt online <b>giao tận nhà ĐÚNG GIỜ</b><br>(nếu trễ đền 20.000đ)</p>
+                </div>
+                <div class="row">
+                    <i class="bhx bhx-swap"></i>
+                    <p>Đổi, trả sản phẩm <b>trong 48 giờ</b></p>
+                </div>
+            </div>
+            <div class="detail row">
+                <aside>
+                    <div class="callcenter row">
+                        <i class="bhx bhx-call"></i>
+                        Tổng đài:
+                        <a href="tel:19002908">1900.1908</a>
+                         - 
+                         <a href="tel:02836229900">028.3622.9900</a>
+                         (7:00 - 21:30)
+                    </div>
+                    <div class="linkstatic">
+                        <a href="#">Chính sách giao hàng</a>
+                        <a href="#">Chính sách đổi trả</a>
+                        <a href="#">Liên hệ</a>
+                        <a href="#" target="_blank" rel="noopener">Hóa đơn điện tử</a>
+                        <a href="#">Hướng dẫn mua hàng</a>
+                        <a href="#">Quy chế hoạt động</a>
+                        <a href="#" class="recruitment" target="_blank" rel="noopener">Tuyển dụng </a> 
+                        <a href="#" class="hot-Job" target="_blank" rel="noreferrer"><strong>4.665</strong> công việc đang chờ bạn</a>
+                    </div>
+                    <div class="webmember">
+                        <span>Website thành viên</span>
+                        <div class="link-member">
+                            <i class="bhx bhx-tgdd"></i>
+                            <i class="bhx bhx-dmx"></i>
+                            <i class="bhx bhx-maiam"></i>
+                        </div>
+                    </div>
+                </aside>
+                <aside>
+                    <div class="stores">
+                        <div>
+                            <i class="bhx bhx-stores"></i>
+                            <a href="#">Hệ thống 
+                                <span>1.336</span>
+                                 cửa hàng Bách Hóa Xanh
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <span>31</span>
+                                 cửa hàng mới khai trương
+                            </a>
+                            <div class="lab_promo">(Có khuyến mãi)</div>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <span>19</span>
+                                 cửa hàng sắp khai trương</a>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <div class="social-left">
+                            <i class="bhx bhx-bct"></i>
+                            <i class="bhx dmca-badge"></i>
+                        </div>
+                        <div class="social-right row">
+                            <i class="bhx bhx-fb"></i>
+                            <i class="bhx bhx-youtube"></i>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <div class="copyright">© 2018. Công Ty Cổ Phần Thương Mại Bách Hoá Xanh. GPDKKD: 0310471746 do sở KH &amp; ĐT TP.HCM cấp ngày 23/11/2010. GP số 40/GP-TTĐT do Sở TTTT TP HCM cấp ngày 06/06/2019. Địa chỉ: 128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí Minh. Email:lienhe@bachhoaxanh.com Chịu trách nhiệm nội dung: Trần Nhật Linh. <a href="/quy-che-hoat-dong">Xem chính sách sử dụng web</a></div>
+    </footer>
+    <!--  -->
+    <div class="stickyfeedback" id="stickyfeedback">
+        <a href="#" class="temcart">
+            <i class="bhx bhx-feedback"></i>
+        </a>
+    </div>
+    <div id="back-top"></div>
+    <div class="ajs-modal" id="ajs-modal">
+        <div class="ajs-dialog">
+            <div class="ajs-body">
+                <div class="ajs-content">
+                    <div class="popup-contact">
+                        <div class="pcontact">
+                            <h1 class="title">
+                                Bách hoá xanh xin hân hạnh được hỗ trợ quý khách
+                            </h1>
+                            <form class="frmContact">
+                                <div class="js-float-label-wrapper">
+                                    <label class="contact-content">Nội dung (xin quý khách mô tả chi tiết)</label>
+                                    <textarea name="txtContent" rows="3" placeholder="Nội dung (xin quý khách mô tả chi tiết)"></textarea>
+                                </div>
+                                <div class="gendercomment">
+                                    <input type="radio" id="male" name="gender" value="male">
+                                    <label for="male">Anh</label><br>
+                                    <input type="radio" id="female" name="gender" value="female">
+                                    <label for="female">Chị</label><br>
+                                </div>
+                                <div class="js-float-label-wrapper">
+                                    <label class="contact-name">Họ và tên</label>
+                                    <input type="text" name="txtFullName" placeholder="Họ và tên của quý khách">
+                                </div>
+                                <div class="js-float-label-wrapper">
+                                    <label class="contact-phone">Số điện thoại</label>
+                                    <input type="number" name="txtPhoneNumber" placeholder="Số điện thoại của quý khách" maxlength="11">
+                                </div>
+                                <div class="js-float-label-wrapper">
+                                    <label class="contact-email">Email</label>
+                                    <input type="text" name="txtEmail" placeholder="Email của quý khách">
+                                </div>
+                                <div class="contact-vvbtn">
+                                    <button title="Gửi góp ý cho Bách hóa Xanh" type="submit">Gửi góp ý</button>
+                                </div>
+                                <div class="contact-vvbtn">
+                                    <a class="closePopupupContact">Đóng</a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="pAlert" style="display: none;">
+                            <div class="message-success">Gửi thành công. Cảm ơn  anh đã đóng góp ý kiến</div>
+                            <button class="closePopupupContact">Đóng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="slider.js" type="text/javascript"></script>
+    <script src="ajs.js" type="text/javascript"></script>
+</body>
+</html>

@@ -16,9 +16,9 @@
 <body>
     <header>
         <div class="tophead row">
-            <div class="logo row">
+            <a href="index.html" class="logo row">
                 <i class="bhx bhx-logo"></i>
-            </div>
+            </a>
             <form class="mainsearch row">
                 <div>
                     <input type="text" name="key" id="text-search" placeholder="Bạn tìm gì..." />
@@ -142,7 +142,7 @@
                 <h2>Sữa các loại</h2>
                 <ul class="cate cateproduct row">
                     <li class="product">
-                        <a href="#">
+                        <a href="detail.html">
                             <div class="boximg">
                                 <img src="images/thung-24-hop-sua-dinh-duong-pha-san-nestle-nan-optipro-185ml-202003011804330734_300x300.jpg">
                                 <div class="boxlabel">Từ 2 tuổi</div>
@@ -465,7 +465,7 @@
                             <h1 class="title">
                                 Bách hoá xanh xin hân hạnh được hỗ trợ quý khách
                             </h1>
-                            <form class="frmContact">
+                            <form class="frmContact" id="frmContact">
                                 <div class="js-float-label-wrapper">
                                     <label class="contact-content">Nội dung (xin quý khách mô tả chi tiết)</label>
                                     <textarea name="txtContent" rows="3" placeholder="Nội dung (xin quý khách mô tả chi tiết)"></textarea>
@@ -488,6 +488,7 @@
                                     <label class="contact-email">Email</label>
                                     <input type="text" name="txtEmail" placeholder="Email của quý khách">
                                 </div>
+                                <div id="message_error" style="display: none;"></div>
                                 <div class="contact-vvbtn">
                                     <button title="Gửi góp ý cho Bách hóa Xanh" type="submit">Gửi góp ý</button>
                                 </div>
@@ -508,5 +509,6 @@
 
     <script src="slider.js" type="text/javascript"></script>
     <script src="ajs.js" type="text/javascript"></script>
+    <script src="validation.js" type="text/javascript"></script>
 </body>
 </html>

@@ -14,11 +14,15 @@ close.addEventListener("click", function(){
 })
 
 menu.addEventListener("click", function(){
-    colmenu.style.display = "block";
+    if(screen.width <= 700){
+        colmenu.style.display = "block";
+    }
 })
 
 rowInColmenu.addEventListener("click", function(){
-    colmenu.style.display = "none";
+    if(screen.width <= 700){
+        colmenu.style.display = "none";
+    }
 })
 
 
