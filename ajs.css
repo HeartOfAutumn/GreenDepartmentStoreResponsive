@@ -137,3 +137,20 @@ textarea{
     min-width: unset;
     cursor: pointer;
 }
+
+.popup-contact .pAlert button {
+    display: block;
+    overflow: hidden;
+    padding: 10px 0;
+    border: 1px solid #22502b;
+    border-radius: 4px;
+    background: #008848;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    width: 30%;
+    margin-top: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 20px auto -50px;
+}

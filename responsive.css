@@ -40,6 +40,14 @@
         height: 90%;
     }
 
+    .ocmenu .bhx-navmenu{
+        background-image: url(icon/bhx-navmenu-mobile.png);
+    }
+
+    .colmenu .bhx-navmenu{
+        background-image: url(icon/bhx-navmenu.png);
+    }
+
     .location-container{
         width: 30%;
     }
